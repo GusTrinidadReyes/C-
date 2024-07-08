@@ -1,0 +1,25 @@
+/// practica  while con interes compuesto
+#include<iostream>
+
+using namespace std;
+int main()
+{
+    float inversion=0, plazo=5, i=0;
+    int total=0;
+    cout<<"ingrse el monto que desea invertir\n";
+    cin>>inversion;
+    while(i<plazo)
+    {
+        inversion=inversion*1.09;
+        total=(int)inversion;
+        cout<<"inversion:"<<total<<"\n";
+        i++;
+        
+    }
+    total=(int)inversion;
+    cout<<"el total de su inversion en 5 anos es de:\n";
+    cout<<total<<" "<<"pesos";
+
+
+    return 0;
+}
