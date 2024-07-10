@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+//crear un usuario y contrasena, verificar la contrasena mediante el uso de do y while.
+{
+    string usuario;
+    int password1=0, password2=0;
+    cout<<"ingresa tu usuario\n";
+    cin>>usuario;
+    cout<<"ingresa tu password\n";
+    cin>>password1;
+    do
+    {
+        cout<<"confirma tu password\n";
+        cin>>password2;
+        if(password1!=password2)
+        cout<<"password invalido\n";
+        
+    }
+    while(password1!=password2);
+
+        cout<<"usuario creado con exito\n";
+    
+
+
+
+
+
+
+
+    return 0;
+}
